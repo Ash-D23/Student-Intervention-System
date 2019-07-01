@@ -11,3 +11,8 @@
   border-style: solid;
   border-color: red;
 }
+
+.form-check-label{
+
+  padding-right: 10px;
+}

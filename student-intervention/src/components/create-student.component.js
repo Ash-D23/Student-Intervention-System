@@ -101,6 +101,7 @@ export default class CreateStudent extends Component {
         })
 */
         this.props.history.push('/');
+    // return <Redirect to="/" />
     }
 
     render() {
@@ -126,6 +127,7 @@ export default class CreateStudent extends Component {
                     </div>
                     <div className="form-group">
                         <div className="form-check form-check-inline">
+                        <label className="form-check-label">Gender : </label>
                             <input  className="form-check-input"
                                     type="radio"
                                     name="priorityOptions"
@@ -176,6 +178,7 @@ export default class CreateStudent extends Component {
 
                     <div className="form-group">
                         <div className="form-check form-check-inline">
+                        <label className="form-check-label">Internship: </label>
                             <input  className="form-check-input"
                                     type="radio"
                                     name="iOptions"

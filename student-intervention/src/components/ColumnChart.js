@@ -24,7 +24,7 @@ class ColumnChart extends Component{
                 datasets:[
                   {
                     label:'Marks',
-                    data:response.data,
+                    data:response.data.arr,
                     backgroundColor:[
                       'rgba(255, 99, 132, 0.6)',
                       'rgba(54, 162, 235, 0.6)',

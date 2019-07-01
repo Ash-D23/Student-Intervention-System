@@ -20,7 +20,8 @@ export default class StudentList extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {students: []};
+        this.state = {students: [],
+        redirect : true};
     }
 
     componentDidMount() {
@@ -35,8 +36,22 @@ export default class StudentList extends Component {
 
     }
 
+  /*  componentDidUpdate() {
+        axios.get('http://localhost:4000/student/qr')
+            .then(response => {
+              console.log('res ',response.data)
+                this.setState({students: response.data});
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
 
+    }*/
 
+    componentDidUpdate(){
+    //  window.location.reload();
+    console.log("came to update");
+    }
 
     stuList() {
         return this.state.students.map(function(currentStudent, i) {
@@ -47,7 +62,9 @@ export default class StudentList extends Component {
 
 
     render() {
+
         return (
+
             <div>
                 <br />
                 <h3>Top Students List</h3>

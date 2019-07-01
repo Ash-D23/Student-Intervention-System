@@ -6,7 +6,7 @@ class LineChart extends Component{
   constructor(props){
     super(props);
     this.state = {
-     chartData:{}
+     Data:{}
   }
   }
 
@@ -18,15 +18,22 @@ class LineChart extends Component{
   }
 
   componentDidMount() {
-      axios.get('http://localhost:4000/student/line')
+     axios.get('http://localhost:4000/student/line')
           .then(response => {
             console.log('line ',response.data)
-              this.setState({chartData:{
+              var x=response.data;
+              var y=[]
+              y.push(x['a'])
+              y.push(x['b'])
+              y.push(x['c'])
+              y.push(x['d'])
+              y.push(x['e'])
+              this.setState({Data:{
                 labels: ['0', '10', '20', '30', '>30'],
                 datasets:[
                   {
                     label:'Absences',
-                    data:response.data,
+                    data:y,
                     backgroundColor:[
                       'rgba(255, 99, 132, 0.6)',
                       'rgba(54, 162, 235, 0.6)',
@@ -50,7 +57,7 @@ class LineChart extends Component{
     return (
       <div className="chart">
 			<Line
-      data={this.state.chartData}
+      data={this.state.Data}
 			width={100}
 			height={75}
       options={{

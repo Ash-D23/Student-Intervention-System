@@ -45,7 +45,7 @@ export default class Intervention extends Component {
         return (
             <div>
                 <br />
-                <h3>Students List</h3>
+                <h3>Intervention Required : </h3>
                 <table className="table table-striped" style={{ marginTop: 20 }}>
                     <thead>
                         <tr>

@@ -31,7 +31,7 @@ export default class details extends Component {
           <h3> Student Details </h3>
 
           <h4> Total Students : {this.state.data.total} </h4>
-          <h4> Student Intervention : {this.state.data.intern} </h4>
+          <h4> Student Intervention : {this.state.data.inter} </h4>
           <h4> Female students : {this.state.data.female} </h4>
           <h4> Internships/Projects : {this.state.data.intern} </h4>
           <h4> Highest Score : {this.state.data.high} </h4>

@@ -51,37 +51,38 @@ api.route('/pie').get(function(req, res) {
 
 api.route('/line').get(function(req, res) {
 
-  obj=[]
+  var obj={}
         student.
      countDocuments({
        absences: { $eq: 0}
      }).
      exec(function(err, c) {
-            obj.push(c)
+            obj['a']=c
             student.
          countDocuments({
            absences: { $gt: 0, $lt: 10 }
          }).
          exec(function(err, c) {
-                obj.push(c)
+                obj['b']=c
                 student.
              countDocuments({
                absences: { $gt: 10, $lt: 20 }
              }).
              exec(function(err, c) {
-                    obj.push(c)
+                    obj['c']=c
                     student.
                  countDocuments({
                    absences: { $gt: 20, $lt: 30 }
                  }).
                  exec(function(err, c) {
-                        obj.push(c)
+                        obj['d']=c
                         student.
                      countDocuments({
                        absences: { $gt: 30}
                      }).
                      exec(function(err, c) {
-                            obj.push(c)
+                            obj['e']=c
+
                             res.json(obj)
                        });
                    });
@@ -96,7 +97,7 @@ api.route('/column').get(function(req, res) {
            console.log('Count is ' + c);
            res.json(c)
       });*/
-obj=[]
+var obj=[]
       student.
    countDocuments({
      average: { $gt: 0, $lt: 40 }
@@ -127,7 +128,9 @@ obj=[]
                    }).
                    exec(function(err, c) {
                           obj.push(c)
-                          res.json(obj)
+                          result = {}
+                          result['arr']=obj
+                          res.json(result)
                      });
                  });
              });
