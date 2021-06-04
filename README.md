@@ -2,7 +2,7 @@
 
 # Introduction
 
-Web Application for Student’s Performance Analysis and to Identify students who might need early intervention before they fail to graduate. It is generally meant for Department HOD and faculties to analyze student's Performance and Results. It stores Student Deltails in a database and uses Machine Learning Model to identify Students who miht need early intervention and Python Data Analysis tools like Pandas and Data Visualization tools like Seaborn is used to analyze the overall Performance of the Class or Department.
+Web Application for Student’s Performance Analysis and to Identify students who might need early intervention before they fail to graduate. It is generally meant for Department HOD and faculties to analyze student's Performance and Results. It stores Student Deltails in a database and uses Machine Learning Model to identify Students who might need early intervention and Python Data Analysis tools like Pandas and Data Visualization tools like Seaborn is used to analyze the overall Performance of the Class or Department.
 
 ## Tech Stack 
 
@@ -40,3 +40,4 @@ The dataset used in this project is included as `student-intervention.csv`. This
 Demo : https://drive.google.com/open?id=18Be-U-kXXBgZf0FK7mufKLZz5zeAtjPS
 
 Hosted on heroku link: https://ash-d23.github.io/student-deploy/
+
