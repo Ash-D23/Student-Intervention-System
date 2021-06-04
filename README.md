@@ -38,3 +38,5 @@ The dataset used in this project is included as `student-intervention.csv`. This
 ![Student](https://github.com/Ash-D23/Student-Intervention-System/blob/master/Screenshots/2019-06-28%20(1).png)
 
 Demo : https://drive.google.com/open?id=18Be-U-kXXBgZf0FK7mufKLZz5zeAtjPS
+
+Hosted on heroku link: https://ash-d23.github.io/student-deploy/
