@@ -1,0 +1,18 @@
+.gallery {
+  text-align: center;
+  padding : 20px;
+  margin-top: 25px;
+
+}
+
+.g {
+  margin-top: 70px;
+  padding : 50px;
+  border-style: solid;
+  border-color: red;
+}
+
+.form-check-label{
+
+  padding-right: 10px;
+}
